@@ -1,0 +1,142 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue May 09 03:07:52 2017
+| Host         : DESKTOP-9O2OAFS running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TopModule_control_sets_placed.rpt
+| Design       : TopModule
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    75 |
+| Unused register locations in slices containing registers |   474 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             189 |           77 |
+| No           | No                    | Yes                    |              52 |           14 |
+| No           | Yes                   | No                     |             122 |           76 |
+| Yes          | No                    | No                     |               7 |            6 |
+| Yes          | No                    | Yes                    |               4 |            1 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+------------------------+--------------------------------+------------------+----------------+
+|            Clock Signal           |      Enable Signal     |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
++-----------------------------------+------------------------+--------------------------------+------------------+----------------+
+|  se/out_reg[7][2]/G0              |                        |                                |                1 |              1 |
+|  se/out_reg[7][0]/G0              |                        |                                |                1 |              1 |
+|  se/out_reg[0][1]/G0              |                        |                                |                1 |              1 |
+|  se/out_reg[4][0]/G0              |                        |                                |                1 |              1 |
+|  s/inp_reg[4][20]_i_2_n_1         |                        | s/inp_reg[4][19]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[4][20]_i_2_n_1         |                        | s/inp_reg[4][20]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[4][22]_i_2_n_1         |                        | s/inp_reg[4][21]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[4][22]_i_2_n_1         |                        | s/inp_reg[4][22]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[5][21]_i_2_n_1         |                        | s/inp_reg[5][21]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[7][17]_i_2_n_1         |                        | s/inp_reg[5][17]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[1][23]_i_2_n_1         |                        | s/inp_reg[1][23]_i_3_n_1       |                1 |              1 |
+|  f_0                              |                        | led/divider/oe_i_1_n_1         |                1 |              1 |
+|  s/inp_reg[2][21]_i_2_n_1         |                        | s/inp_reg[2][20]_i_2_n_1       |                1 |              1 |
+| ~f_0                              |                        | led/divider/CO[0]              |                1 |              1 |
+|  s/inp_reg[2][21]_i_2_n_1         |                        | s/inp_reg[2][21]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[5][22]_i_2_n_1         |                        | s/inp_reg[5][22]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[5][23]_i_2_n_1         |                        | s/inp_reg[5][23]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[7][17]_i_2_n_1         |                        | s/inp_reg[7][17]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[7][22]_i_2_n_1         |                        | s/inp_reg[7][22]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[7][17]_i_2_n_1         |                        | s/inp_reg[5][18]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[4][23]_i_2_n_1         |                        | s/inp_reg[4][23]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[5][16]_i_2_n_1         |                        | s/inp_reg[5][16]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[0][23]_i_2_n_1         |                        | s/inp_reg[0][23]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[1][16]_i_2_n_1         |                        | s/inp_reg[1][16]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[1][21]_i_2_n_1         |                        | s/inp_reg[1][20]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[1][21]_i_2_n_1         |                        | s/inp_reg[1][21]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[2][16]_i_2_n_1         |                        | s/inp_reg[2][16]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[2][23]_i_2_n_1         |                        | s/inp_reg[2][23]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[3][16]_i_2_n_1         |                        | s/inp_reg[3][16]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[3][17]_i_2_n_1         |                        | s/inp_reg[2][17]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[3][17]_i_2_n_1         |                        | s/inp_reg[3][17]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[3][17]_i_2_n_1         |                        | s/inp_reg[0][16]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[3][17]_i_2_n_1         |                        | s/inp_reg[1][17]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[7][23]_i_1_n_1         |                        | s/inp_reg[7][23]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[7][16]_i_2_n_1         |                        | s/inp_reg[7][16]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[7][21]_i_2_n_1         |                        | s/inp_reg[5][20]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[7][21]_i_2_n_1         |                        | s/inp_reg[7][18]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[7][21]_i_2_n_1         |                        | s/inp_reg[7][19]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[7][21]_i_2_n_1         |                        | s/inp_reg[7][21]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[7][21]_i_2_n_1         |                        | s/inp_reg[5][19]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[7][21]_i_2_n_1         |                        | s/inp_reg[7][20]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[3][19]_i_2_n_1         |                        | s/inp_reg[0][19]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[3][19]_i_2_n_1         |                        | s/inp_reg[0][20]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[3][19]_i_2_n_1         |                        | s/inp_reg[1][19]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[3][19]_i_2_n_1         |                        | s/inp_reg[2][18]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[3][19]_i_2_n_1         |                        | s/inp_reg[2][19]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[3][19]_i_2_n_1         |                        | s/inp_reg[3][18]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[3][19]_i_2_n_1         |                        | s/inp_reg[3][19]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[3][19]_i_2_n_1         |                        | s/inp_reg[0][17]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[3][19]_i_2_n_1         |                        | s/inp_reg[0][18]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[3][19]_i_2_n_1         |                        | s/inp_reg[1][18]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[3][20]_i_2_n_1         |                        | s/inp_reg[3][20]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[3][21]_i_2_n_1         |                        | s/inp_reg[3][21]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[3][22]_i_2_n_1         |                        | s/inp_reg[3][22]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[3][22]_i_2_n_1         |                        | s/inp_reg[0][21]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[3][22]_i_2_n_1         |                        | s/inp_reg[0][22]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[3][22]_i_2_n_1         |                        | s/inp_reg[1][22]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[3][22]_i_2_n_1         |                        | s/inp_reg[2][22]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[3][23]_i_2_n_1         |                        | s/inp_reg[3][23]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[4][16]_i_2_n_1         |                        | s/inp_reg[4][16]_i_3_n_1       |                1 |              1 |
+|  s/inp_reg[4][18]_i_2_n_1         |                        | s/inp_reg[4][17]_i_2_n_1       |                1 |              1 |
+|  s/inp_reg[4][18]_i_2_n_1         |                        | s/inp_reg[4][18]_i_3_n_1       |                1 |              1 |
+|  cont/nextstate_reg[0][1]_i_2_n_1 |                        |                                |                1 |              2 |
+| ~clk_IBUF_BUFG                    |                        | led/divider/shcp1_carry__2_n_5 |                1 |              2 |
+|  se/out_reg[2][0]_i_1__0_n_1      |                        | se/out_reg[2][0]_i_2_n_1       |                1 |              2 |
+|  ss/test                          |                        | ss/second[3]_i_4_n_1           |                1 |              4 |
+|  ss/test                          | ss/second[3]_i_1_n_1   | ss/second[3]_i_4_n_1           |                1 |              4 |
+| ~f_0                              |                        |                                |                3 |              6 |
+|  s/clockEnable                    | cont/state_reg[0][0]_0 |                                |                6 |              7 |
+|  s/inp_reg[6][23]_i_2_n_1         |                        |                                |                3 |              8 |
+|  clk_IBUF_BUFG                    |                        |                                |                4 |              9 |
+|  clk_IBUF_BUFG                    |                        | s/count[28]_i_1_n_1            |                8 |             29 |
+| ~f_0                              |                        | led/divider/i[31]_i_1_n_1      |                8 |             31 |
+|  clk_IBUF_BUFG                    |                        | reset_IBUF                     |               13 |             48 |
+|  n_0_447_BUFG                     |                        |                                |               62 |            160 |
++-----------------------------------+------------------------+--------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                    62 |
+| 2      |                     3 |
+| 4      |                     2 |
+| 6      |                     1 |
+| 7      |                     1 |
+| 8      |                     1 |
+| 9      |                     1 |
+| 16+    |                     4 |
++--------+-----------------------+
+
+
